@@ -7,15 +7,15 @@ export function Dashboard() {
       title: 'Total Invoices Today',
       value: '12',
       icon: FileText,
-      color: 'text-[#1e3a5f]',
-      bgColor: 'bg-blue-50',
+      color: 'text-primary',
+      bgColor: 'bg-primary/5',
     },
     {
       title: 'Total Invoices This Month',
       value: '248',
       icon: FileText,
-      color: 'text-slate-600',
-      bgColor: 'bg-slate-50',
+      color: 'text-destructive',
+      bgColor: 'bg-destructive/10',
     },
     {
       title: 'Total Tax Amount (Month)',
@@ -45,7 +45,7 @@ export function Dashboard() {
     <div className="max-w-[1600px]">
       <div className="mb-6">
         <h1 className="text-xl lg:text-2xl text-slate-900 mb-1">Dashboard</h1>
-        <p className="text-sm text-slate-600">FBR Digital Invoice Summary</p>
+        <p className="text-sm text-slate-600">AL Aiza Enterprises</p>
       </div>
 
       {/* Summary Cards */}
@@ -96,11 +96,10 @@ export function Dashboard() {
                   <td className="px-6 py-3.5 text-sm text-slate-900">{activity.amount}</td>
                   <td className="px-6 py-3.5">
                     <span
-                      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-sm text-xs ${
-                        activity.status === 'Sent'
-                          ? 'bg-green-100 text-green-800'
-                          : 'bg-amber-100 text-amber-800'
-                      }`}
+                      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-sm text-xs ${activity.status === 'Sent'
+                        ? 'bg-green-100 text-green-800'
+                        : 'bg-amber-100 text-amber-800'
+                        }`}
                     >
                       {activity.status === 'Sent' ? (
                         <CheckCircle2 className="w-3 h-3" />

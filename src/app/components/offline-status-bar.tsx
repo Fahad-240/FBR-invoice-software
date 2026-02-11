@@ -31,8 +31,8 @@ export function OfflineStatusBar() {
     return (
         <div
             className={`px-4 py-2 flex items-center justify-between text-sm ${isOnline
-                    ? 'bg-green-50 border-b border-green-200 text-green-900'
-                    : 'bg-amber-50 border-b border-amber-200 text-amber-900'
+                ? 'bg-green-50 border-b border-green-200 text-green-900'
+                : 'bg-amber-50 border-b border-amber-200 text-amber-900'
                 }`}
         >
             <div className="flex items-center gap-2">

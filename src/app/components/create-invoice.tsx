@@ -180,7 +180,7 @@ export function CreateInvoice() {
                       setBuyerType('Registered');
                       setBuyerSTRN('');
                     }}
-                    className="w-4 h-4 text-[#1e3a5f] focus:ring-[#1e3a5f]"
+                    className="w-4 h-4 text-primary focus:ring-primary"
                   />
                   <span className="text-sm text-slate-900">Registered Buyer</span>
                 </label>
@@ -193,7 +193,7 @@ export function CreateInvoice() {
                       setBuyerType('Unregistered');
                       setBuyerSTRN('9999997');
                     }}
-                    className="w-4 h-4 text-[#1e3a5f] focus:ring-[#1e3a5f]"
+                    className="w-4 h-4 text-primary focus:ring-primary"
                   />
                   <span className="text-sm text-slate-900">Unregistered Buyer</span>
                 </label>
@@ -206,7 +206,7 @@ export function CreateInvoice() {
                 type="text"
                 value={buyerName}
                 onChange={(e) => setBuyerName(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
             </div>
@@ -221,7 +221,7 @@ export function CreateInvoice() {
                 value={buyerType === 'Unregistered' ? '9999997' : buyerSTRN}
                 onChange={(e) => buyerType === 'Registered' && setBuyerSTRN(e.target.value)}
                 readOnly={buyerType === 'Unregistered'}
-                className={`w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f] ${buyerType === 'Unregistered' ? 'bg-slate-50 text-slate-500' : ''
+                className={`w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary ${buyerType === 'Unregistered' ? 'bg-slate-50 text-slate-500' : ''
                   }`}
                 placeholder={buyerType === 'Registered' ? 'Enter STRN' : 'Auto-filled for unregistered'}
               />
@@ -236,7 +236,7 @@ export function CreateInvoice() {
                 type="text"
                 value={buyerNTN}
                 onChange={(e) => setBuyerNTN(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -245,7 +245,7 @@ export function CreateInvoice() {
               <select
                 value={buyerProvince}
                 onChange={(e) => setBuyerProvince(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option>Punjab</option>
                 <option>Sindh</option>
@@ -262,7 +262,7 @@ export function CreateInvoice() {
               <select
                 value={paymentMode}
                 onChange={(e) => setPaymentMode(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option>Cash</option>
                 <option>Credit</option>
@@ -276,7 +276,7 @@ export function CreateInvoice() {
                 type="text"
                 value={buyerAddress}
                 onChange={(e) => setBuyerAddress(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
           </div>
@@ -302,7 +302,7 @@ export function CreateInvoice() {
               <input
                 type="date"
                 defaultValue="2026-02-09"
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
             <div>
@@ -310,7 +310,7 @@ export function CreateInvoice() {
               <select
                 value={invoiceType}
                 onChange={(e) => setInvoiceType(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option>Tax Invoice</option>
                 <option>Commercial Invoice</option>
@@ -322,7 +322,7 @@ export function CreateInvoice() {
               <select
                 value={saleType}
                 onChange={(e) => setSaleType(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a5f]"
+                className="w-full px-3 py-2 border border-slate-300 rounded-sm text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option>Local</option>
                 <option>Inter-Provincial</option>
@@ -338,7 +338,7 @@ export function CreateInvoice() {
             <h2 className="text-sm lg:text-base text-slate-900">Item Details</h2>
             <button
               onClick={addItem}
-              className="flex items-center gap-2 px-3 py-1.5 bg-[#1e3a5f] text-white text-sm rounded-sm hover:bg-[#2d5280]"
+              className="flex items-center gap-2 px-3 py-1.5 bg-primary text-white text-sm rounded-sm hover:bg-primary/90"
             >
               <Plus className="w-4 h-4" />
               <span className="hidden sm:inline">Add Item</span>
@@ -367,7 +367,7 @@ export function CreateInvoice() {
                       type="text"
                       value={item.description}
                       onChange={(e) => updateItem(item.id, 'description', e.target.value)}
-                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-[#1e3a5f]"
+                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                       placeholder="Item description"
                     />
                   </td>
@@ -375,7 +375,7 @@ export function CreateInvoice() {
                     <select
                       value={item.hsCode}
                       onChange={(e) => updateItem(item.id, 'hsCode', e.target.value)}
-                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-[#1e3a5f]"
+                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                     >
                       <option value="">Select HS Code</option>
                       {hsCodeMasterList.map((hsItem) => (
@@ -395,7 +395,7 @@ export function CreateInvoice() {
                       type="number"
                       value={item.quantity || ''}
                       onChange={(e) => updateItem(item.id, 'quantity', parseFloat(e.target.value) || 0)}
-                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-[#1e3a5f]"
+                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                       min="0"
                     />
                   </td>
@@ -403,7 +403,7 @@ export function CreateInvoice() {
                     <select
                       value={item.unit}
                       onChange={(e) => updateItem(item.id, 'unit', e.target.value)}
-                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-[#1e3a5f]"
+                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                     >
                       <option>PCS</option>
                       <option>KG</option>
@@ -417,7 +417,7 @@ export function CreateInvoice() {
                       type="number"
                       value={item.rate || ''}
                       onChange={(e) => updateItem(item.id, 'rate', parseFloat(e.target.value) || 0)}
-                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-[#1e3a5f]"
+                      className="w-full px-2 py-1.5 border border-slate-300 rounded-sm text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                       min="0"
                       step="0.01"
                     />
@@ -452,7 +452,7 @@ export function CreateInvoice() {
                 <span className="text-sm text-slate-700">Sales Tax (Variable):</span>
                 <span className="text-sm text-slate-900">PKR {calculateTax().toLocaleString('en-PK', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
               </div>
-              <div className="flex justify-between py-3 bg-[#1e3a5f] text-white px-4 mt-2 rounded-sm">
+              <div className="flex justify-between py-3 bg-primary text-white px-4 mt-2 rounded-sm">
                 <span className="text-base">Total Invoice Value:</span>
                 <span className="text-lg">PKR {calculateTotal().toLocaleString('en-PK', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
               </div>
@@ -471,7 +471,7 @@ export function CreateInvoice() {
           </button>
           <button
             onClick={handleSubmitToFBR}
-            className="flex items-center justify-center gap-2 px-5 py-2.5 bg-[#1e3a5f] text-white rounded-sm hover:bg-[#2d5280]"
+            className="flex items-center justify-center gap-2 px-5 py-2.5 bg-primary text-white rounded-sm hover:bg-primary/90"
           >
             <Send className="w-4 h-4" />
             <span className="hidden sm:inline">Save & Submit to FBR</span>
